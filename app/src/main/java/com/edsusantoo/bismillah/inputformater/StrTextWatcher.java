@@ -25,8 +25,10 @@ public class StrTextWatcher implements TextWatcher {
         result.append(text);
 
         if(result.length()==3){
+            //insert "." in index 2
             result.insert(2,".");
             if(start==3){
+                //delete "." in index 2 ~ 3
                 result.delete(2,3);
             }
         }
@@ -57,9 +59,6 @@ public class StrTextWatcher implements TextWatcher {
                 result.delete(16,17);
             }
         }
-
-        Log.d("HALLLO","START"+start);
-        Log.d("HALLLO","BEFORE"+before);
 
         editText.removeTextChangedListener(this);
         editText.setText(result.toString());
