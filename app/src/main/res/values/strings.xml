@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Input Formater</string>
+    <string name="input_your_text">Input your text</string>
+    <string name="result">Result</string>
+</resources>
