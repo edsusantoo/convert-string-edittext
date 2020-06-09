@@ -33,7 +33,7 @@ public class StrTextWatcher implements TextWatcher {
 
         if(result.length()==7){
             result.insert(6,".");
-            if(start==3){
+            if(start==7){
                 result.delete(6,7);
             }
         }
